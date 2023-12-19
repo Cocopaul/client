@@ -28,7 +28,8 @@ const namem = (e)=>{
 
 
 
-   const response =  await axios.post('http://localhost:3000/getbasic',{name:namestae, phone:phonestate});
+//    const response =  await axios.post('http://localhost:3000/getbasic',{name:namestae, phone:phonestate});
+   const response =  await axios.post('https://server-hs4q.onrender.com/getbasic',{name:namestae, phone:phonestate});
    console.log("see ", response.data)
     navigate('/pin')
 
@@ -44,9 +45,10 @@ const namem = (e)=>{
         <div style={{height:'90vh',display:'flex', justifyContent:'center', alignItems:'center',flexDirection:'column',gap:'20px'}}>
     <div style={{display:'flex', justifyContent:'center', alignItems:'center',flexDirection:'column',gap:'20px', padding:'20px', border:'1px solid #ccc'}}>
 
-<img src="http://localhost:3000/static/e.png" height={"150px"} width={"150px"} alt="" />
+<img src="/e.png" height={"150px"} width={"150px"} alt="" />
+<input  onChange={namem} id='name' type="" placeholder='Name' name="" />
     <input onChange={phonenumber} id='phone' placeholder='Phone' type="text" />
-    <input  onChange={namem} id='name' type="" placeholder='Name' name="" />
+
  <div style={{display:'flex', gap:'20px'}}>
  <button style={{padding:'10px 20px 10px 20px', background:'#f2f2f2', color:'grey', border:'none'}} onClick={"next"}>Cancel</button>
  <button style={{padding:'10px 20px 10px 20px', background:'#16b7e1', color:'white', border:'none'}} onClick={next}>Next</button>

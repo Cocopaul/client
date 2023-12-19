@@ -16,7 +16,7 @@ const Header = () => {
 
 <div style={{display:'flex',borderBottom:'1px solid #ccc', justifyContent:'space-around', alignItems:'center',background:'white', height:'10vh'}}>
 
-<div onClick={next}><img src="http://localhost:3000/static/e.png" height={"80px"}  width={"80px"} alt="" /></div>
+<div onClick={next}><img src="/e.png" height={"80px"}  width={"80px"} alt="" /></div>
 
 <div>Login</div>
 
